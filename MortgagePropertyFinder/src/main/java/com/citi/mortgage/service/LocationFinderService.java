@@ -42,7 +42,7 @@ public class LocationFinderService {
 		Circle area=new Circle(basepoint,d);
 		Query query=new Query();
 		query.addCriteria(Criteria.where("where address.geoLocation").withinSphere(area));
-		System.out.println("Entity findRecordByDistance operation  sucessfuly performed"+query);
+		System.out.println("Entity findRecordByDistance operation performing"+query);
 		return operation.find(query, PropertyDetailsEntity.class);
 	}
 
