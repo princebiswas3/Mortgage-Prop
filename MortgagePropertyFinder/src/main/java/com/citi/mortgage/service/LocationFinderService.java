@@ -45,6 +45,6 @@ public class LocationFinderService {
 		System.out.println("Entity findRecordByDistance operation performing"+query);
 		return operation.find(query, PropertyDetailsEntity.class);
 	}
-
+	
 
 }
